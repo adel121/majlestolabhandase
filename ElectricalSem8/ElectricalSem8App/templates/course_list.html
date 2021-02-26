@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block contentblock %}
+<div class="container jumbotron" style="background-color:#ffb5aa;margin-top:10px">
+<ul class="list-group">
+<h1 style="text-align: center; color:black;font-family: 'Font Awesome\ 5 Free';"> <b><i>{{class}}</i></b></h1>
+{% for course in courses %}
+
+<li class="list-group-item list-group-item-danger" style="background-color:#fffaaa"><a href="{% url 'course_prompt' course %}"><h3 style="text-align:center"> {{course}} </h3></a></li>
+
+{% endfor %}
+</ul></div>
+{% endblock %}

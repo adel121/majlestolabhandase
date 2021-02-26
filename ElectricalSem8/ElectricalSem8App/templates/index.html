@@ -1,0 +1,41 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+
+{% block contentblock %}
+<div class="jumbotron container" style="background-color:#ffb5aa;align-items: center; margin-top: 10px">
+
+<h1 style="text-align: center;font-family: 'Font Awesome\ 5 Free';"> <b><i>Welcome To The Faculty of Engineering<hr> Please Choose Your Major</h1></i></b>
+<hr>
+
+
+<a href="{% url 'class_list' 'common trunk' %}">
+<button type="button" class="btn btn-danger"  style="color:black;background-color:#fffaaa;width:100%; "><h2 style="text-align: center;font-family: 'Font Awesome\ 5 Free';"> <b><i></i></b>Common Trunk</h2></button></a>
+<hr>
+
+<a href="{% url 'class_list' 'ge' %}">
+<button type="button" class="btn btn-danger"  style="color:black;background-color:#fffaaa;width:100%; "><h2 style="text-align: center;font-family: 'Font Awesome\ 5 Free';"> <b><i></i></b>Electrical Engineering (Sem 5 - 7)</h2></button></a>
+<hr>
+
+<a href="{% url 'class_list' 'telecom' %}">
+<button type="button" class="btn btn-danger"  style="color:black;background-color:#fffaaa;width:100%; "><h2 style="text-align: center;font-family: 'Font Awesome\ 5 Free';"> <b><i></i></b>Telecom</h2></button></a>
+<hr>
+
+<a href="{% url 'class_list' 'power' %}">
+<button type="button" class="btn btn-danger"  style="color:black;background-color:#fffaaa;width:100%; "><h2 style="text-align: center;font-family: 'Font Awesome\ 5 Free';"> <b><i></i></b>Power</h2></button></a>
+<hr>
+
+<a href="{% url 'class_list' 'gc' %}">
+<button type="button" class="btn btn-danger"  style="color:black;background-color:#fffaaa;width:100%; "><h2 style="text-align: center;font-family: 'Font Awesome\ 5 Free';"> <b><i></i></b>Civil Engineering</h2></button></a>
+<hr>
+
+<a href="{% url 'class_list' 'gm' %}">
+<button type="button" class="btn btn-danger"  style="color:black;background-color:#fffaaa;width:100%; "><h2 style="text-align: center;font-family: 'Font Awesome\ 5 Free';"> <b><i></i></b>Mechanical Engineering</h2></button></a>
+<hr>
+
+<a href="{% url 'class_list' 'gp' %}">
+<button type="button" class="btn btn-danger"  style="color:black;background-color:#fffaaa;width:100%; "><h2 style="text-align: center;font-family: 'Font Awesome\ 5 Free';"> <b><i></i></b>Petrochemical Engineering</h2></button></a>
+<hr>
+</div>
+{% endblock %}
